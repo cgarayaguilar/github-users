@@ -1,0 +1,14 @@
+.list-of-user {
+  display: grid;
+  grid-gap: 16px;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  margin: auto;
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  @include media(desktop-s) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
